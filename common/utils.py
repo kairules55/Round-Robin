@@ -2,19 +2,20 @@ import json
 import requests
 from enum import Enum
 
-class Status(Enum):
-    HEALTHY = 200
-    SLOW = 408
-    DOWN = 500
-
 with open('config.json') as f:
     config = json.load(f)
 
+# Load the configuration from the config.json file
 HEALTH_CHECK_TIMEOUT = config['healthcheck_config']['timeout']
 HEALTH_CHECK_INTERVAL = config['healthcheck_config']['interval']
 APPLICATION_TIMEOUT = config['application_config']['timeout']
 HEALTH_CHECK_DELAY = config['healthcheck_config']['simulated_delay']
 APPLICATION_DELAY = config['application_config']['simulated_delay']
+
+class Status(Enum):
+    HEALTHY = 200
+    SLOW = 408
+    DOWN = 500
 
 def get_application_instances():
     application_url = get_application_url()

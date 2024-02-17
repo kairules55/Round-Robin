@@ -20,6 +20,7 @@ def application_api():
     data = request.json
     return jsonify(data), 200
 
+
 # Health check endpoint
 @app.route('/health', methods=['GET'])
 def health():

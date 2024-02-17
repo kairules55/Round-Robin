@@ -6,7 +6,7 @@ import time
 from round_robin_api.app import app
 from common.utils import get_application_instances, Status, HEALTH_CHECK_TIMEOUT, HEALTH_CHECK_INTERVAL, APPLICATION_TIMEOUT
 
-
+# Setup threads and application instances
 lock = threading.Lock()
 application_instances = get_application_instances()
 instance_index = 0
@@ -77,6 +77,7 @@ def round_robin_api():
     instance_url = get_next_instance()
     
     if instance_url is None:
+        app.logger.error("All instances are down")
         return jsonify({"error": "All instances are down"}), 500
     
     response_data, status_code = make_request_and_update_status('post', instance_url, '/api',  data, APPLICATION_TIMEOUT)
