@@ -1,28 +1,37 @@
 import os
+import time
 from flask import jsonify, request
 
 from application_api.app import app
-from common.utils import get_slow_ports, get_faulty_ports
+from common.utils import get_slow_ports, get_faulty_ports, APPLICATION_DELAY, HEALTH_CHECK_DELAY
 
 # Application API endpoint
 @app.route('/api', methods=['POST'])
 def application_api():
+    # Get the server port from the request
     server_port = request.environ.get('SERVER_PORT')
-    app.logger.info(f"Received request on port {request.environ.get('SERVER_PORT')}")
+    slow_ports = get_slow_ports()
+
+    # If the server port is in the slow ports list, delay the response (Simulate a slow response)
+    if server_port in slow_ports:
+        app.logger.info(f"Delaying response on port {server_port}")
+        time.sleep(APPLICATION_DELAY)
+
     data = request.json
     return jsonify(data), 200
 
 # Health check endpoint
 @app.route('/health', methods=['GET'])
 def health():
+    # Get the server port from the request
     server_port = request.environ.get('SERVER_PORT')
     slow_ports = get_slow_ports()
-    faulty_ports = get_faulty_ports()
-    app.logger.info(f"slow ports {slow_ports} {type(slow_ports)} {type(slow_ports[0])}")
-    app.logger.info(f"Health check on port {server_port} {type(server_port)}")
+    status = "healthy"
+
+    # If the server port is in the slow ports list, delay the response (Simulate a slow response)
     if server_port in slow_ports:
-        return jsonify({"status": "slow"}), 300
-    elif server_port in faulty_ports:
-        return jsonify({"status": "down"}), 500
-    else:
-        return jsonify({"status": "healthy"}), 200
+        app.logger.info(f"Delaying response on port {server_port}")
+        status = "slow"
+        time.sleep(HEALTH_CHECK_DELAY)
+    
+    return jsonify({"status": status}), 200

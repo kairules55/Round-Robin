@@ -13732,3 +13732,864 @@ Health check for instance http://localhost:5006: {'status': 'slow'} : 300
 Health check failed for instance http://localhost:5006: 300
 Health check for instance http://localhost:5007: {'status': 'healthy'} : 200
 Health check for instance http://localhost:5008: {'status': 'healthy'} : 200
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Using instance: http://localhost:5001
+Exception on /round-robin-api [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 53, in round_robin_api
+    response_data, status_code = make_request(instance_url, 'api', data, 5)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: make_request() takes from 2 to 3 positional arguments but 4 were given
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5005
+Using instance: http://localhost:5006
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Exception on /round-robin-api [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 53, in round_robin_api
+    response_data, status_code = make_request(instance_url, data, 5)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+Exception on /round-robin-api [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 53, in round_robin_api
+    response_data, status_code = make_request(instance_url, data, 5)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5005
+Using instance: http://localhost:5006
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Exception on /round-robin-api [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 53, in round_robin_api
+    response_data, status_code = make_request(instance_url, data, 5)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+Using instance: http://localhost:5004
+Exception on /round-robin-api [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 53, in round_robin_api
+    response_data, status_code = make_request(instance_url, data, 5)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+Using instance: http://localhost:5005
+Exception on /round-robin-api [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 53, in round_robin_api
+    response_data, status_code = make_request(instance_url, data, 5)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5005
+Using instance: http://localhost:5006
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 is slow HTTPConnectionPool(host='localhost', port=5005): Read timed out. (read timeout=2)
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 is slow HTTPConnectionPool(host='localhost', port=5006): Read timed out. (read timeout=2)
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Using instance: http://localhost:5001
+Instance http://localhost:5005 is slow HTTPConnectionPool(host='localhost', port=5005): Read timed out. (read timeout=2)
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 is slow HTTPConnectionPool(host='localhost', port=5006): Read timed out. (read timeout=2)
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5005
+Using instance: http://localhost:5006
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5006
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 is slow HTTPConnectionPool(host='localhost', port=5005): Read timed out. (read timeout=2)
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 is slow HTTPConnectionPool(host='localhost', port=5006): Read timed out. (read timeout=2)
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Using instance: http://localhost:5005
+Using instance: http://localhost:5006
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5006
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 is slow HTTPConnectionPool(host='localhost', port=5005): Read timed out. (read timeout=2)
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 is slow HTTPConnectionPool(host='localhost', port=5006): Read timed out. (read timeout=2)
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 is slow HTTPConnectionPool(host='localhost', port=5005): Read timed out. (read timeout=2)
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 is slow HTTPConnectionPool(host='localhost', port=5006): Read timed out. (read timeout=2)
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Exception on /round-robin-api [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 51, in round_robin_api
+    instance_url = get_next_instance()
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 28, in get_next_instance
+    instance_url = get_instances(Status.HEALTHY)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 15, in get_instances
+    logger.info(f"Instances : {application_instances}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 is slow HTTPConnectionPool(host='localhost', port=5005): Read timed out. (read timeout=2)
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 is slow HTTPConnectionPool(host='localhost', port=5006): Read timed out. (read timeout=2)
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Instances : ['http://localhost:5001', 'http://localhost:5002', 'http://localhost:5003', 'http://localhost:5004', 'http://localhost:5005', 'http://localhost:5006', 'http://localhost:5007', 'http://localhost:5008']
+Using instance: http://localhost:5001
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 is slow HTTPConnectionPool(host='localhost', port=5005): Read timed out. (read timeout=2)
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 is slow HTTPConnectionPool(host='localhost', port=5006): Read timed out. (read timeout=2)
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Instances : {'http://localhost:5001': <Status.SLOW: 200>, 'http://localhost:5002': <Status.SLOW: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.SLOW: 200>, 'http://localhost:5005': <Status.SLOW: 200>, 'http://localhost:5006': <Status.SLOW: 200>, 'http://localhost:5007': <Status.SLOW: 200>, 'http://localhost:5008': <Status.SLOW: 200>}
+Using instance: http://localhost:5001
+Instances : {'http://localhost:5001': <Status.SLOW: 200>, 'http://localhost:5002': <Status.SLOW: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.SLOW: 200>, 'http://localhost:5005': <Status.SLOW: 200>, 'http://localhost:5006': <Status.SLOW: 200>, 'http://localhost:5007': <Status.SLOW: 200>, 'http://localhost:5008': <Status.SLOW: 200>}
+Using instance: http://localhost:5002
+Instances : {'http://localhost:5001': <Status.SLOW: 200>, 'http://localhost:5002': <Status.SLOW: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.SLOW: 200>, 'http://localhost:5005': <Status.SLOW: 200>, 'http://localhost:5006': <Status.SLOW: 200>, 'http://localhost:5007': <Status.SLOW: 200>, 'http://localhost:5008': <Status.SLOW: 200>}
+Using instance: http://localhost:5004
+Instances : {'http://localhost:5001': <Status.SLOW: 200>, 'http://localhost:5002': <Status.SLOW: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.SLOW: 200>, 'http://localhost:5005': <Status.SLOW: 200>, 'http://localhost:5006': <Status.SLOW: 200>, 'http://localhost:5007': <Status.SLOW: 200>, 'http://localhost:5008': <Status.SLOW: 200>}
+Using instance: http://localhost:5005
+Instances : {'http://localhost:5001': <Status.SLOW: 200>, 'http://localhost:5002': <Status.SLOW: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.SLOW: 200>, 'http://localhost:5005': <Status.SLOW: 200>, 'http://localhost:5006': <Status.SLOW: 200>, 'http://localhost:5007': <Status.SLOW: 200>, 'http://localhost:5008': <Status.SLOW: 200>}
+Using instance: http://localhost:5006
+Instances : {'http://localhost:5001': <Status.SLOW: 200>, 'http://localhost:5002': <Status.SLOW: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.SLOW: 200>, 'http://localhost:5005': <Status.DOWN: 500>, 'http://localhost:5006': <Status.SLOW: 200>, 'http://localhost:5007': <Status.SLOW: 200>, 'http://localhost:5008': <Status.SLOW: 200>}
+Using instance: http://localhost:5007
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Instance http://localhost:5001 status: Status.HEALTHY
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.HEALTHY
+Instance http://localhost:5005 status: Status.HEALTHY
+Instance http://localhost:5006 status: Status.HEALTHY
+Instance http://localhost:5007 status: Status.HEALTHY
+Instance http://localhost:5008 status: Status.HEALTHY
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.HEALTHY: 200>, 'http://localhost:5006': <Status.HEALTHY: 200>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5001
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.HEALTHY: 200>, 'http://localhost:5006': <Status.HEALTHY: 200>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5002
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.HEALTHY: 200>, 'http://localhost:5006': <Status.HEALTHY: 200>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5004
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.HEALTHY: 200>, 'http://localhost:5006': <Status.HEALTHY: 200>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5005
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.HEALTHY: 200>, 'http://localhost:5006': <Status.HEALTHY: 200>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5006
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.HEALTHY: 200>, 'http://localhost:5006': <Status.HEALTHY: 200>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5007
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.HEALTHY: 200>, 'http://localhost:5006': <Status.HEALTHY: 200>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5008
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.HEALTHY: 200>, 'http://localhost:5006': <Status.HEALTHY: 200>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5001
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.HEALTHY: 200>, 'http://localhost:5006': <Status.HEALTHY: 200>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5002
+Instance http://localhost:5001 status: Status.HEALTHY
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.HEALTHY
+Instance http://localhost:5005 status: Status.HEALTHY
+Instance http://localhost:5006 status: Status.HEALTHY
+Instance http://localhost:5007 status: Status.HEALTHY
+Instance http://localhost:5008 status: Status.HEALTHY
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.HEALTHY: 200>, 'http://localhost:5006': <Status.HEALTHY: 200>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5001
+Instance http://localhost:5001 status: Status.HEALTHY
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.HEALTHY
+Instance http://localhost:5005 is slow HTTPConnectionPool(host='localhost', port=5005): Read timed out. (read timeout=2)
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 is slow HTTPConnectionPool(host='localhost', port=5006): Read timed out. (read timeout=2)
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.HEALTHY
+Instance http://localhost:5008 status: Status.HEALTHY
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.SLOW: 408>, 'http://localhost:5006': <Status.SLOW: 408>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5001
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.SLOW: 408>, 'http://localhost:5006': <Status.SLOW: 408>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5002
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.SLOW: 408>, 'http://localhost:5006': <Status.SLOW: 408>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5004
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.SLOW: 408>, 'http://localhost:5006': <Status.SLOW: 408>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5007
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.SLOW: 408>, 'http://localhost:5006': <Status.SLOW: 408>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5008
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.SLOW: 408>, 'http://localhost:5006': <Status.SLOW: 408>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5001
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.SLOW: 408>, 'http://localhost:5006': <Status.SLOW: 408>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5002
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.SLOW: 408>, 'http://localhost:5006': <Status.SLOW: 408>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5004
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.SLOW: 408>, 'http://localhost:5006': <Status.SLOW: 408>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5007
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.SLOW: 408>, 'http://localhost:5006': <Status.SLOW: 408>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5008
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.SLOW: 408>, 'http://localhost:5006': <Status.SLOW: 408>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5001
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.SLOW: 408>, 'http://localhost:5006': <Status.SLOW: 408>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5002
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.SLOW: 408>, 'http://localhost:5006': <Status.SLOW: 408>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5004
+Instances : {'http://localhost:5001': <Status.HEALTHY: 200>, 'http://localhost:5002': <Status.HEALTHY: 200>, 'http://localhost:5003': <Status.DOWN: 500>, 'http://localhost:5004': <Status.HEALTHY: 200>, 'http://localhost:5005': <Status.SLOW: 408>, 'http://localhost:5006': <Status.SLOW: 408>, 'http://localhost:5007': <Status.HEALTHY: 200>, 'http://localhost:5008': <Status.HEALTHY: 200>}
+Using instance: http://localhost:5007
+Instance http://localhost:5001 status: Status.HEALTHY
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 is down
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.HEALTHY
+Instance http://localhost:5005 is down
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 is down
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.HEALTHY
+Instance http://localhost:5008 status: Status.HEALTHY
+Using instance: http://localhost:5001
+Exception on /round-robin-api [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 88, in round_robin_api
+    response_data, status_code = make_request_and_update_status(instance_url, data, APPLICATION_TIMEOUT)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 57, in make_request_and_update_status
+    response = make_request(method, instance_url, endpoint, data, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 46, in make_request
+    raise ValueError("Invalid method. Expected 'get' or 'post'.")
+ValueError: Invalid method. Expected 'get' or 'post'.
+Instance http://localhost:5001 status: Status.HEALTHY
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 is down
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.HEALTHY
+Instance http://localhost:5005 is down
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 is down
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.HEALTHY
+Instance http://localhost:5008 status: Status.HEALTHY
+Instance http://localhost:5001 status: Status.HEALTHY
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 is down
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.HEALTHY
+Instance http://localhost:5005 is down
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 is down
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.HEALTHY
+Instance http://localhost:5008 status: Status.HEALTHY
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Instance http://localhost:5001 status: Status.HEALTHY
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 is down
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.HEALTHY
+Instance http://localhost:5005 is down
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 is down
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.HEALTHY
+Instance http://localhost:5008 status: Status.HEALTHY
+Instance http://localhost:5001 status: Status.HEALTHY
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 is down
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.HEALTHY
+Instance http://localhost:5005 is down
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 is down
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.HEALTHY
+Instance http://localhost:5008 status: Status.HEALTHY
+Instance http://localhost:5001 status: Status.HEALTHY
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 is down
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.HEALTHY
+Instance http://localhost:5005 is down
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 is down
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.HEALTHY
+Instance http://localhost:5008 status: Status.HEALTHY
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Instance http://localhost:5001 status: Status.HEALTHY
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 is down
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.HEALTHY
+Instance http://localhost:5005 is down
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 is down
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.HEALTHY
+Instance http://localhost:5008 status: Status.HEALTHY
+Instance http://localhost:5001 is down
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 is down
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 is down
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 is down
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 is down
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 is down
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 is down
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 is down
+Instance http://localhost:5008 status: Status.SLOW
+Instance http://localhost:5001 is down
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 is down
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 is down
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Instance http://localhost:5001 status: Status.HEALTHY
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.HEALTHY
+Instance http://localhost:5005 status: Status.HEALTHY
+Instance http://localhost:5006 status: Status.HEALTHY
+Instance http://localhost:5007 status: Status.HEALTHY
+Instance http://localhost:5008 status: Status.HEALTHY
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5005
+Using instance: http://localhost:5006
+Using instance: http://localhost:5007
+Exception on /round-robin-api [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 88, in round_robin_api
+    response_data, status_code = make_request(instance_url, data)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: make_request() missing 1 required positional argument: 'endpoint'
+Using instance: http://localhost:5008
+Exception on /round-robin-api [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 88, in round_robin_api
+    response_data, status_code = make_request(instance_url, data)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: make_request() missing 1 required positional argument: 'endpoint'
+Using instance: http://localhost:5004
+Using instance: http://localhost:5005
+Exception on /round-robin-api [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 88, in round_robin_api
+    response_data, status_code = make_request(instance_url, data)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: make_request() missing 1 required positional argument: 'endpoint'
+Using instance: http://localhost:5006
+Exception on /round-robin-api [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 88, in round_robin_api
+    response_data, status_code = make_request(instance_url, data)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: make_request() missing 1 required positional argument: 'endpoint'
+Using instance: http://localhost:5007
+Exception on /round-robin-api [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 88, in round_robin_api
+    response_data, status_code = make_request(instance_url, data)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: make_request() missing 1 required positional argument: 'endpoint'
+Using instance: http://localhost:5008
+Exception on /round-robin-api [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kkhatri/Documents/personal/round-robin-project/round_robin_api/round_robin.py", line 88, in round_robin_api
+    response_data, status_code = make_request(instance_url, data)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: make_request() missing 1 required positional argument: 'endpoint'
+Instance http://localhost:5001 status: Status.HEALTHY
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.HEALTHY
+Instance http://localhost:5005 status: Status.HEALTHY
+Instance http://localhost:5006 status: Status.HEALTHY
+Instance http://localhost:5007 status: Status.HEALTHY
+Instance http://localhost:5008 status: Status.HEALTHY
+Instance http://localhost:5001 status: Status.HEALTHY
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.HEALTHY
+Instance http://localhost:5005 status: Status.HEALTHY
+Instance http://localhost:5006 status: Status.HEALTHY
+Instance http://localhost:5007 status: Status.HEALTHY
+Instance http://localhost:5008 status: Status.HEALTHY
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5005
+Using instance: http://localhost:5006
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Instance http://localhost:5001 status: Status.HEALTHY
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.HEALTHY
+Instance http://localhost:5005 status: Status.HEALTHY
+Instance http://localhost:5006 status: Status.HEALTHY
+Instance http://localhost:5007 status: Status.HEALTHY
+Instance http://localhost:5008 status: Status.HEALTHY
+Using instance: http://localhost:5004
+Using instance: http://localhost:5005
+Using instance: http://localhost:5006
+Using instance: http://localhost:5007
+Instance http://localhost:5001 status: Status.HEALTHY
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.HEALTHY
+Instance http://localhost:5005 status: Status.HEALTHY
+Instance http://localhost:5006 status: Status.HEALTHY
+Instance http://localhost:5007 status: Status.HEALTHY
+Instance http://localhost:5008 status: Status.HEALTHY
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5005
+Using instance: http://localhost:5006
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Instance http://localhost:5001 status: Status.HEALTHY
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.HEALTHY
+Instance http://localhost:5005 status: Status.HEALTHY
+Instance http://localhost:5006 status: Status.HEALTHY
+Instance http://localhost:5007 status: Status.HEALTHY
+Instance http://localhost:5008 status: Status.HEALTHY
+Instance http://localhost:5001 status: Status.HEALTHY
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.HEALTHY
+Instance http://localhost:5005 status: Status.HEALTHY
+Instance http://localhost:5006 status: Status.HEALTHY
+Instance http://localhost:5007 status: Status.HEALTHY
+Instance http://localhost:5008 status: Status.HEALTHY
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Using instance: http://localhost:5001
+Using instance: http://localhost:5001
+Using instance: http://localhost:5001
+Using instance: http://localhost:5001
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.SLOW
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 status: Status.SLOW
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.SLOW
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5005
+Using instance: http://localhost:5006
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5005
+Using instance: http://localhost:5006
+Using instance: http://localhost:5007
+Using instance: http://localhost:5008
+Using instance: http://localhost:5001
+Using instance: http://localhost:5002
+Using instance: http://localhost:5004
+Using instance: http://localhost:5005
+Using instance: http://localhost:5006
+Using instance: http://localhost:5007
+Instance http://localhost:5001 status: Status.SLOW
+Instance http://localhost:5002 status: Status.HEALTHY
+Instance http://localhost:5003 status: Status.DOWN
+Instance http://localhost:5004 status: Status.SLOW
+Instance http://localhost:5005 status: Status.SLOW
+Instance http://localhost:5006 status: Status.HEALTHY
+Instance http://localhost:5007 status: Status.SLOW
+Instance http://localhost:5008 status: Status.HEALTHY
+Using instance: http://localhost:5002
+Using instance: http://localhost:5006
+Using instance: http://localhost:5008
+Using instance: http://localhost:5002
+Using instance: http://localhost:5006
+Using instance: http://localhost:5008
+Using instance: http://localhost:5002
+Using instance: http://localhost:5006
