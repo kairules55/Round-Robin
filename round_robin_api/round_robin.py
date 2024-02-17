@@ -51,7 +51,7 @@ def update_status(instance_url, status, status_code=None):
 def make_request_and_update_status(method, instance_url, endpoint, data=None, timeout=5):
     try:
         response = make_request(method, instance_url, endpoint, data, timeout)
-        instance_status[instance_url] = Status.HEALTHY
+        update_status(instance_url, Status.HEALTHY, response.status_code)
         return response.json(), response.status_code
     except requests.exceptions.Timeout as e:
         return update_status(instance_url, Status.SLOW, 408)
