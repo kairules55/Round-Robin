@@ -14,7 +14,6 @@ def application_api():
 
     # If the server port is in the slow ports list, delay the response (Simulate a slow response)
     if server_port in slow_ports:
-        app.logger.info(f"Delaying response on port {server_port}")
         time.sleep(APPLICATION_DELAY)
 
     data = request.json
@@ -31,7 +30,6 @@ def health():
 
     # If the server port is in the slow ports list, delay the response (Simulate a slow response)
     if server_port in slow_ports:
-        app.logger.info(f"Delaying response on port {server_port}")
         status = "slow"
         time.sleep(HEALTH_CHECK_DELAY)
     

@@ -45,6 +45,7 @@ def make_request(method, instance_url, endpoint, data=None, timeout=5):
 def update_status(instance_url, status, status_code=None):
     with lock:
         instance_status[instance_url] = status
+        app.logger.info(f"Instance {instance_url} status: {instance_status[instance_url]}")
     return None, status_code
 
 
@@ -61,8 +62,6 @@ def make_request_and_update_status(method, instance_url, endpoint, data=None, ti
 
 def health_check_instance(instance_url):
     _, status_code = make_request_and_update_status('get', instance_url, '/health', timeout=HEALTH_CHECK_TIMEOUT)
-    app.logger.info(f"Instance {instance_url} status: {instance_status[instance_url]}")
-
 
 def health_check():
     while True:

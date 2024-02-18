@@ -6,7 +6,7 @@
         "slow_simulation": ["5001", "5003", "5004", "5005", "5007"], 
         "down_simulation": ["5003"], 
         "timeout": 5,
-        "simulated_delay": 4
+        "simulated_delay": 6
     },
     "healthcheck_config": {
         "url": "http://localhost",
