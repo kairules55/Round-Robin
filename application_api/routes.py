@@ -32,5 +32,5 @@ def health():
     if server_port in slow_ports:
         status = "slow"
         time.sleep(HEALTH_CHECK_DELAY)
-    
+
     return jsonify({"status": status}), 200

@@ -2,9 +2,26 @@
     "application_config": {
         "url": "http://localhost",
         "endpoint": "/api",
-        "ports": ["5001", "5002", "5003", "5004", "5005", "5006", "5007", "5008"],
-        "slow_simulation": ["5001", "5003", "5004", "5005", "5007"], 
-        "down_simulation": ["5003"], 
+        "ports": [
+            "5001",
+            "5002",
+            "5003",
+            "5004",
+            "5005",
+            "5006",
+            "5007",
+            "5008"
+        ],
+        "slow_simulation": [
+            "5001",
+            "5003",
+            "5004",
+            "5005",
+            "5007"
+        ],
+        "down_simulation": [
+            "5003"
+        ],
         "timeout": 5,
         "simulated_delay": 6
     },
@@ -17,6 +34,7 @@
     },
     "round_robin_config": {
         "url": "http://localhost",
-        "port": "5000"
+        "port": "5000",
+        "max_retry": 3
     }
 }
