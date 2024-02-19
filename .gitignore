@@ -1,2 +1,5 @@
 application_api.log
 round_robin.log
+.idea
+__pycache__
+.pytest_cache
