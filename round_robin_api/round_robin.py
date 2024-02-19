@@ -7,6 +7,7 @@ from round_robin_api.app import app
 from application_api.app import app as application_app
 from common.utils import get_application_instances, get_application_url,  Status, HEALTH_CHECK_TIMEOUT, HEALTH_CHECK_INTERVAL, APPLICATION_TIMEOUT, MAX_RETRY
 
+
 # Setup threads and application instances
 lock = threading.Lock()
 application_instances = get_application_instances()
